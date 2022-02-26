@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mikulás űrlap">
+    <meta name="keywords" content="Mikulás">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemcsek Péter</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    </style>
+</head>
+<body>
+    <main>
+        <header>Mikulás házhoz megy!</header>
+        <nav>
+            <ul>
+                <li><a href="index.html">A Mikulásról</a></li>
+                <li><a href="megrendelo.html">Megrendelő</a></li>
+                <li><a href="kulsolink.html">Külső link</a></li>
+            </ul>
+        </nav>
+        <article>
+            <p>Válaszd ki melyik szolgáltatást kéred!</p>
+            <form action="/action_page.php" method="get">
+                <h2>Amit a Mikulásnak tudnia kell</h2>
+                    <label for="megrendelo">Megrendelő neve <div id="csillag">*</div></label><br>
+                    <input type="text" id="megrendelo" name="megrendelo"/><br><br>
+                    <label for="cegnev">Cég neve <div id="csillag">*</div></label><br>
+                    <input type="text" name="ceg" id="ceg"/><br><br>
+                    <label for="email">E-mail cím <div id="csillag">*</div></label><br>
+                    <input type="text" id="email" name="email"/><br><br>
+                    <label for="text">Számlázási név, cím <div id="csillag">*</div></label><br>
+                    <textarea id="text" name="text" rows="4" cols="50"></textarea><br><br>
+                    <label for="text">Látogatási cím <div id="csillag">*</div></label><br>
+                    <textarea id="text" name="text" rows="4" cols="50"></textarea><br><br>
+                    <label for="letszam">Létszám <div id="csillag">*</div></label><br>
+                    <input type="number" name="letszam" id="letszam"/><br><br>
+                    <label for="text">Fontosabb tudnivalók</label><br>
+                    <textarea id="text" name="text" rows="4" cols="50"></textarea><br><br>
+                    <label for="text">Kérés, bármilyen megjegyzés</label><br>
+                    <textarea id="text" name="text" rows="4" cols="50"></textarea><br><br>
+                    <label for="idopont">Időpont</label><br>
+                    <input type="date" name="idopont" id="idopont"/><br><br>
+                    <label for="ora">Óra</label><br>
+                    <input type="time" name="ora" id="ora"/><br><br>
+                    <label for="elfogadas">Elfogadás <div id="csillag">*</div></label>
+                    <div id="feltetel">A felhasználási feltételeket, az adatvédelmi szabályokat megismertem és elfogadom.</div>
+                    <label class="container">Elfogadom
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label for="szolg">Melyik szolgáltatást választod? <div id="csillag">*</div></label>
+                    <label class="container">Céges Mikulás
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Dolgozó Mikulás
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Futár Mikulás
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Reklám Mikulás
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Kérem a kézműves foglalkozást is!
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Csomagolást is kérünk!
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    </label>
+            </form>
+        </article>
+        <footer>
+            © Minden jog fenntartva!
+        </footer>
+    </main>
+</body>
+</html>
